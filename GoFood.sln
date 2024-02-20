@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFood", "GoFood\GoFood\GoFood.csproj", "{6E158E09-0745-476B-BFCC-A978E2B60B9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFood.Client", "GoFood\GoFood.Client\GoFood.Client.csproj", "{94D5042B-170B-441A-8407-F754B4473938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E158E09-0745-476B-BFCC-A978E2B60B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E158E09-0745-476B-BFCC-A978E2B60B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E158E09-0745-476B-BFCC-A978E2B60B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E158E09-0745-476B-BFCC-A978E2B60B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D5042B-170B-441A-8407-F754B4473938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D5042B-170B-441A-8407-F754B4473938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D5042B-170B-441A-8407-F754B4473938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D5042B-170B-441A-8407-F754B4473938}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0407817-B297-4BFA-8C16-1C37D15711A2}
+	EndGlobalSection
+EndGlobal
