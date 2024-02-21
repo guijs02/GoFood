@@ -1,0 +1,138 @@
+﻿@page "/"
+
+@using GoFood.Application.Services.Interfaces
+@using GoFood.Domain.Dtos
+@using GoFood.Domain.Google.Places
+@using System.Diagnostics
+
+@inject ILocationService locationService
+
+<div class="d-flex justify-content-center align-items-center" style="margin-top:5%;">
+
+    <MudPaper Class="d-flex justify-center flex-grow-1 gap-4" Elevation="0">
+        <MudTextField OnKeyPress="@(OnKeyPressInput)" Class="flex-grow-0" AdornmentIcon="@Icons.Material.Filled.Search" @bind-Value="Endereco" Label="Insira o endereço" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentColor="Color.Secondary"></MudTextField>
+
+        <MudButton OnClick="GetPlacesAround" Class="flex-grow-0" Variant="Variant.Filled" Color="Color.Primary">Procurar</MudButton>
+
+    </MudPaper>
+</div>
+<br />
+<br />
+@if (Root != null)
+{
+    <MudContainer>
+        <MudGrid Justify="Justify.Center">
+            <MudVirtualize Items="Root.results" Context="place">
+                <MudPaper Elevation="0" Style="width:23rem; margin-right:2rem;" Class=" gap-x-8 gap-y-4 my-4 border">
+
+                    <MudCard Square="true" Class="card">
+                        <MudCardMedia Image="@ObterFoto(place)" Class="imagem" />
+                        <MudCardContent>
+                            <img src="@place.icon" height="20" alt="icone do lugar" />
+                            <MudText Typo="Typo.h6">@place.name</MudText>
+                                <MudText Typo="Typo.body2">@place.vicinity</MudText>
+                                <MudText Typo="Typo.body2" Class="@ColorStatus">@ObterStatus(place)</MudText>
+                                <MudRating ReadOnly="true" SelectedValue="@(ConvertRating(place.rating))" />
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+                                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+                            </MudCardActions>
+                        </MudCard>
+                    </MudPaper>
+                </MudVirtualize>
+            </MudGrid>
+        </MudContainer>
+}
+
+@if (IsError)
+{
+    <MudAlert Severity="Severity.Error">@MessageError</MudAlert>
+}
+
+
+<style>
+    .imagem {
+        width: 23rem;
+        height: 200px;
+    }
+
+    html {
+        height: 100vh;
+    }
+</style>
+
+@code {
+
+    private string? Endereco { get; set; }
+    private Root? Root;
+    private bool MostrarEndereco;
+    private bool IsClickSerach;
+    private string ColorStatus;
+    private bool IsError;
+    private string MessageError;
+
+    protected override Task OnInitializedAsync()
+    {
+        return base.OnInitializedAsync();
+    }
+
+    public async Task OnKeyPressInput(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await GetPlacesAround();
+        }
+    }
+    public async Task GetPlacesAround()
+    {
+        try
+        {
+            if (Endereco is null)
+            {
+                return;
+            }
+
+            Stopwatch st = new();
+            st.Start();
+            Root = await locationService.GetLocationAsync(Endereco);
+            st.Stop();
+
+            Console.WriteLine($"Tempo em ms: {st.Elapsed.TotalMilliseconds}");
+        }
+        catch (Exception e)
+        {
+            IsError = true;
+            MessageError = e.Message;
+        }
+    }
+
+    public string ObterFoto(ResultPlaces resultPlaces)
+    {
+        string urlDefault = "https://sdumont.lncc.br/images/projects/no-image.png";
+
+        if (resultPlaces.photos is null)
+            return urlDefault;
+
+        return resultPlaces.DictionaryFotos[resultPlaces.PhotoReference];
+    }
+
+    int ConvertRating(double rating)
+    {
+        return (int)rating;
+    }
+    string ObterStatus(ResultPlaces place)
+    {
+
+        if (place.opening_hours.open_now)
+        {
+            ColorStatus = "text-success";
+            return "Aberto Agora";
+        }
+        else
+        {
+            ColorStatus = "text-danger";
+            return "Fechado";
+        }
+    }
+}

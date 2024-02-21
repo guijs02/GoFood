@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.AssemblyInfo.cs
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\source\repos\GoFoodProject\GoFood.Client\obj\Debug\net7.0\GoFood.Client.sourcelink.json
