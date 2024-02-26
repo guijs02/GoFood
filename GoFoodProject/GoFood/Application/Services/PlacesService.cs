@@ -14,12 +14,10 @@ namespace GoFood.Application.Services
             _httpClient = new HttpClient { BaseAddress = new Uri("https://localhost:7164") };
         }
 
-        public async Task<Root> GetPlacesAroundAsync(Location location)
+        public async Task<Root> GetPlacesAroundAsync(PlacesRequest placesRequest)
         {
             try
             {
-                var placesRequest = SetObjects(location);
-
                 var response = await _httpClient.PostAsJsonAsync("api/Places", placesRequest);
 
                 var obj = await response.ReadJsonAsObject<Root>();
@@ -31,17 +29,6 @@ namespace GoFood.Application.Services
 
                 throw;
             }
-        }
-        public PlacesRequest SetObjects(Location location)
-        {
-            string radius = "600";
-
-            return new PlacesRequest
-            {
-                lat = location.lat,
-                lng = location.lng,
-                radius = radius,
-            };
         }
     }
 }

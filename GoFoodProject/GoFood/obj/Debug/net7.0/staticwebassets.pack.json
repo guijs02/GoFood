@@ -65,8 +65,16 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\wwwroot\\filtro.png",
+      "PackagePath": "staticwebassets\\filtro.png"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\wwwroot\\image.png",
+      "PackagePath": "staticwebassets\\image.png"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\wwwroot\\index.html",

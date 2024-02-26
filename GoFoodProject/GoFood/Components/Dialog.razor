@@ -1,0 +1,77 @@
+﻿<MudDialog IsVisible="@IsVisibility" Style=@_style>
+    <TitleContent><h1>Filtro de Restaurantes</h1></TitleContent>
+    <DialogContent>
+        <label>Distância</label>
+        <MudSlider @bind-Value="@userInput.Radius" Min="300" Max="1000" Color="Color.Info">Raio: @(userInput.Radius.ToString() == "1000" ? "1 km" : $"{userInput.Radius.ToString()} m")</MudSlider>
+        <br />
+        <br />
+
+        <MudSelect @bind-Value="@userInput.QtdAvaliacoes" Style="margin-top:5rem;" T="string" Label="Número de avaliações" AnchorOrigin="Origin.BottomCenter">
+            <MudSelectItem Value="@("+1")" />
+            <MudSelectItem Value="@("+2")" />
+            <MudSelectItem Value="@("+3")" />
+            <MudSelectItem Value="@("+4")" />
+        </MudSelect>
+        <br />
+        <MudSwitch @bind-Value="@_checked3" ThumbIcon="@(_checked3==true ? Icons.Material.Filled.Done : Icons.Material.Filled.Close)" ThumbIconColor="@(_checked3==true ? Color.Success : Color.Error)">Aberto</MudSwitch>
+
+        <div class="container">
+            <div>
+                <MudButton OnClick="@Close">Fechar</MudButton>
+
+            </div>
+            <div>
+                <MudButton OnClick="@SaveChanges">OK</MudButton>
+
+            </div>
+        </div>
+    </DialogContent>
+
+</MudDialog>
+
+<style>
+    .container{
+        display: flex;
+        align-items: flex-end;
+        height: 210px;
+        justify-content: flex-end;
+    }
+</style>
+@code {
+    private string _style => $"height:{Height}%; width:{Width}%;";
+
+    private bool _checked3 = false;
+
+    [Parameter]
+    public bool IsVisibility { get; set; }
+
+    [Parameter]
+    public string? Height { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> VisibilityChanged { get; set; }  
+
+    [Parameter]
+    public EventCallback<UserInputModel> FiltroSavedChanged { get; set; }
+
+    [Parameter]
+    public string? Width { get; set; }
+
+    [Parameter]
+    public UserInputModel userInput { get; set; }
+
+    string[] labels = new string[] { "400 m", "500 m", "600 m", "700 m", "800 m", "900 m", "1 km" };
+
+    void Close()
+    {
+        IsVisibility = false;
+        VisibilityChanged.InvokeAsync(IsVisibility);
+    }
+    void SaveChanges()
+    {
+        IsVisibility = false;
+        //userInput.Radius = radius;
+        FiltroSavedChanged.InvokeAsync(userInput);
+        Close();
+    }
+}

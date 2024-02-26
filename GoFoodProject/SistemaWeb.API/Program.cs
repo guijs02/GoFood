@@ -1,3 +1,6 @@
+using GoFood.GoogleAPI;
+using GoFood.Domain.API_s;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,6 +22,18 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+GoogleAPI.GetApiKey(builder.Configuration);
+
+app.MapGet("api/Photo/{photoRef}", (string photoRef) =>
+{
+    var key = GoogleAPI.GoogleApiKey;
+    
+    var photo = $"{PhotosAPI.BaseUrl}maxwidth=400&minwidth=130&photoreference={photoRef}&key={key}";
+
+    return photo;
+});
+
 app.UseCors(c =>
 
 c.AllowAnyOrigin()

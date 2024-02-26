@@ -1,7 +1,9 @@
-﻿namespace GoFood.Application.Services.Interfaces
+﻿using GoFood.Client.Domain.Model;
+
+namespace GoFood.Application.Services.Interfaces
 {
     public interface ILocationService
     {
-        Task<Root> GetLocationAsync(string endereco);
+        Task<Root> GetLocationAsync(UserInputModel userInputModel);
     }
 }

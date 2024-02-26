@@ -19,7 +19,7 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar>
+    <MudAppBar Class="custom-appbar">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         Go Food
     </MudAppBar>
@@ -31,6 +31,12 @@
     </MudMainContent>
 </MudLayout>
 
+
+<style>
+    .custom-appbar{
+        background-color: #EF4040;
+    }
+</style>
 @code {
     bool _drawerOpen = true;
 

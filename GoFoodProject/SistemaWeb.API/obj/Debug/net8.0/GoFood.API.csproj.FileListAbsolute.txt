@@ -74,6 +74,8 @@ C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\Swashbu
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\GoFood.dll
+C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\GoFood.Domain.dll
+C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\GoFood.Domain.pdb
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\bin\Debug\net8.0\GoFood.pdb
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\GoFood.API.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\GoFood.API.GeneratedMSBuildEditorConfig.editorconfig
@@ -91,7 +93,7 @@ C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\staticw
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GoFood.API.props
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\scopedcss\bundle\GoFood.API.styles.css
-C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\GoFood.API.csproj.CopyComplete
+C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\GoFood.API.csproj.Up2Date
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\GoFood.API.dll
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\refint\GoFood.API.dll
 C:\Users\user\source\repos\GoFoodProject\SistemaWeb.API\obj\Debug\net8.0\GoFood.API.pdb

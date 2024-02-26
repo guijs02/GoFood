@@ -5,7 +5,11 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFood.API", "SistemaWeb.API\GoFood.API.csproj", "{33877A43-32FA-4B02-94CD-C9D883B51EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFood", "GoFood\GoFood.csproj", "{3AE5AC84-5C7B-48F0-9DCE-A4534ED80729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFood", "GoFood\GoFood.csproj", "{3AE5AC84-5C7B-48F0-9DCE-A4534ED80729}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFood.Domain", "GoFood.Domain\GoFood.Domain.csproj", "{3856E475-CCA9-429B-B9D8-E3021648AEAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFood.Test", "GoFood.Test\GoFood.Test.csproj", "{EE22FA91-8655-4B08-ABB3-418D6CF94BE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3AE5AC84-5C7B-48F0-9DCE-A4534ED80729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AE5AC84-5C7B-48F0-9DCE-A4534ED80729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AE5AC84-5C7B-48F0-9DCE-A4534ED80729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3856E475-CCA9-429B-B9D8-E3021648AEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3856E475-CCA9-429B-B9D8-E3021648AEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3856E475-CCA9-429B-B9D8-E3021648AEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3856E475-CCA9-429B-B9D8-E3021648AEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE22FA91-8655-4B08-ABB3-418D6CF94BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE22FA91-8655-4B08-ABB3-418D6CF94BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE22FA91-8655-4B08-ABB3-418D6CF94BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE22FA91-8655-4B08-ABB3-418D6CF94BE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

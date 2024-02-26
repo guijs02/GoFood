@@ -621,6 +621,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "GoFood.Domain": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.16",
           "MudBlazor": "6.16.0"
         },
@@ -629,6 +630,16 @@
         },
         "runtime": {
           "bin/placeholder/GoFood.dll": {}
+        }
+      },
+      "GoFood.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/GoFood.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GoFood.Domain.dll": {}
         }
       }
     }
@@ -1768,11 +1779,17 @@
       "type": "project",
       "path": "../GoFood/GoFood.csproj",
       "msbuildProject": "../GoFood/GoFood.csproj"
+    },
+    "GoFood.Domain/1.0.0": {
+      "type": "project",
+      "path": "../GoFood.Domain/GoFood.Domain.csproj",
+      "msbuildProject": "../GoFood.Domain/GoFood.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "GoFood >= 1.0.0",
+      "GoFood.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -1803,6 +1820,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj"
+            },
             "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj": {
               "projectPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj"
             }
@@ -1813,6 +1833,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1843,7 +1868,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,6 +9,7 @@
       "GoFood.API/1.0.0": {
         "dependencies": {
           "GoFood": "1.0.0",
+          "GoFood.Domain": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -280,11 +281,17 @@
       },
       "GoFood/1.0.0": {
         "dependencies": {
+          "GoFood.Domain": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.16",
           "MudBlazor": "6.16.0"
         },
         "runtime": {
           "GoFood.dll": {}
+        }
+      },
+      "GoFood.Domain/1.0.0": {
+        "runtime": {
+          "GoFood.Domain.dll": {}
         }
       }
     }
@@ -541,6 +548,11 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "GoFood/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoFood.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
