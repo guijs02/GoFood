@@ -1,6 +1,8 @@
 ## Sobre o App Go Food
 Esta aplicação tem a finalidade do usuário localizar restaurantes a partir de um determinado endereço.
-
+<br>
+<br>
+![appThoes](https://github.com/guijs02/GoFood/blob/dev-go-food20/GoFood.png)
 ## 📡 Tecnologias
   Front-end
 - Blazor
