@@ -1,0 +1,37 @@
+# Ignorar arquivos de compilação
+bin/
+obj/
+*.exe
+*.pdb
+*.dll
+*.suo
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wp.c
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignorar diretórios de pacotes NuGet
+packages/
+
+# Ignorar arquivos de configuração local do Visual Studio
+/.vs
