@@ -10,3 +10,15 @@ C:\Users\user\source\repos\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.D
 C:\Users\user\source\repos\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\refint\GoFood.Domain.dll
 C:\Users\user\source\repos\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.pdb
 C:\Users\user\source\repos\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\ref\GoFood.Domain.dll
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\bin\Debug\net7.0\GoFood.Domain.deps.json
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\bin\Debug\net7.0\GoFood.Domain.dll
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\bin\Debug\net7.0\GoFood.Domain.pdb
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.AssemblyInfo.cs
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.sourcelink.json
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.dll
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\refint\GoFood.Domain.dll
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\GoFood.Domain.pdb
+C:\Users\user\source\repos\GoFood\GoFoodProject\GoFood.Domain\obj\Debug\net7.0\ref\GoFood.Domain.dll

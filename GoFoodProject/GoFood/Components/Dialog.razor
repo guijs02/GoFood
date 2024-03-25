@@ -1,4 +1,5 @@
-﻿<MudDialog IsVisible="@IsVisibility" Style=@_style>
+﻿@using GoFood.Application.InputModels
+<MudDialog IsVisible="@IsVisibility" @on OnBackdropClick="OnBackdropClick" Style=@_style>
     <TitleContent><h1>Filtro de Restaurantes</h1></TitleContent>
     <DialogContent>
         <label>Distância</label>
@@ -6,14 +7,15 @@
         <br />
         <br />
 
-        <MudSelect @bind-Value="@userInput.QtdAvaliacoes" Style="margin-top:5rem;" T="string" Label="Número de avaliações" AnchorOrigin="Origin.BottomCenter">
-            <MudSelectItem Value="@("+1")" />
-            <MudSelectItem Value="@("+2")" />
-            <MudSelectItem Value="@("+3")" />
-            <MudSelectItem Value="@("+4")" />
+        <MudSelect @bind-Value="@userInput.QtdAvaliacoes" Style="margin-top:5rem;" T="int" Label="Número de avaliações" AnchorOrigin="Origin.BottomCenter">
+            <MudSelectItem Value="1">+1</MudSelectItem>
+            <MudSelectItem Value="2">+2</MudSelectItem>
+            <MudSelectItem Value="3">+3 </MudSelectItem>
+            <MudSelectItem Value="4">+4</MudSelectItem>
+            <MudSelectItem Value="5">5</MudSelectItem>
         </MudSelect>
         <br />
-        <MudSwitch @bind-Value="@_checked3" ThumbIcon="@(_checked3==true ? Icons.Material.Filled.Done : Icons.Material.Filled.Close)" ThumbIconColor="@(_checked3==true ? Color.Success : Color.Error)">Aberto</MudSwitch>
+        <MudSwitch @bind-Value="@userInput.IsOpen" ThumbIcon="@(userInput.IsOpen ? Icons.Material.Filled.Done : Icons.Material.Filled.Close)" ThumbIconColor="@(userInput.IsOpen ? Color.Success : Color.Error)">Aberto</MudSwitch>
 
         <div class="container">
             <div>
@@ -58,7 +60,7 @@
     public string? Width { get; set; }
 
     [Parameter]
-    public UserInputModel userInput { get; set; }
+    public UserInputModel? userInput { get; set; }
 
     string[] labels = new string[] { "400 m", "500 m", "600 m", "700 m", "800 m", "900 m", "1 km" };
 
@@ -69,9 +71,11 @@
     }
     void SaveChanges()
     {
-        IsVisibility = false;
-        //userInput.Radius = radius;
         FiltroSavedChanged.InvokeAsync(userInput);
         Close();
+    }
+    void OnBackdropClick(MouseEventArgs e)
+    {
+        IsVisibility = false;
     }
 }

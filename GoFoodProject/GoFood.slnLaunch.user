@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Name": "SistemaWeb.API\\GoFood.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "GoFood\\GoFood.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

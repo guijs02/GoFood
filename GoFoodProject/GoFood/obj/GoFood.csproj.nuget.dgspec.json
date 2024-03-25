@@ -1,17 +1,95 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj": {}
+    "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\GoFood.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj": {
+    "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Application\\GoFood.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj",
-        "projectName": "GoFood.Domain",
-        "projectPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Application\\GoFood.Application.csproj",
+        "projectName": "GoFood.Application",
+        "projectPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Application\\GoFood.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj",
+        "projectName": "GoFood.Domain",
+        "projectPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,23 +133,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj": {
+    "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\GoFood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\GoFood.csproj",
         "projectName": "GoFood",
-        "projectPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\GoFood.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +180,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj"
+              "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Application\\GoFood.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Application\\GoFood.Application.csproj"
               }
             }
           }
@@ -133,7 +225,7 @@
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )",
+              "version": "[8.0.3, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -154,8 +246,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.16, 7.0.16]"
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
             }
           ],
           "frameworkReferences": {
@@ -163,7 +267,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

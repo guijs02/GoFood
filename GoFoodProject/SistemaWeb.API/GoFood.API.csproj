@@ -13,8 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GoFood.Domain\GoFood.Domain.csproj" />
-    <ProjectReference Include="..\GoFood\GoFood.csproj" />
+    <ProjectReference Include="..\GoFood.Application\GoFood.Application.csproj" />
   </ItemGroup>
 
 </Project>

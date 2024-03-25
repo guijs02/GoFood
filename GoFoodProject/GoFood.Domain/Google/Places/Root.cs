@@ -3,6 +3,4 @@
 public class Root
 {
     public List<ResultPlaces> results { get; set; }
-    
-    //list
 }

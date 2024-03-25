@@ -54,5 +54,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaWeb.API.Controllers.PlacesController",
+    "Method": "GetPlacesByAutoComplete",
+    "RelativePath": "api/Places/{input}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

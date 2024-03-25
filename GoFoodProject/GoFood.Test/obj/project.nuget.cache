@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VYa3UfmBZQOy8q+bT6a3ieXwmTDxa9Xf6oAEY67cSkvgZcyqYZE6X15cqnO061dNWIeURr3Uf2HeT3MY2YdKzw==",
+  "dgSpecHash": "RpuAY5bV8aAxu7DCboOhaD0LSKKWaA8Xc15jClrk8aPVi7RbbG13T8fFUZJ2P3mj2dIADJCDDj/0+4hjD4cpEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
@@ -92,7 +92,10 @@
     "C:\\Users\\user\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": []
 }

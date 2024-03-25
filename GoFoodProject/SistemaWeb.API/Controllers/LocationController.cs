@@ -1,6 +1,6 @@
 ﻿using GoFood.GoogleAPI;
-using GoFood.Domain.Google.GeoCode;
 using Microsoft.AspNetCore.Mvc;
+using GoFood.Application.API_s;
 
 
 namespace SistemaWeb.API.Controllers

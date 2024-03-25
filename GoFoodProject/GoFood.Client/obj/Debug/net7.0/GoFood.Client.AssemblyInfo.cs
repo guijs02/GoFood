@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoFood.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5358fb4e52a26a3d0d7b681a0e35afec25adc309")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaae3dbdcb4405723e188ac2d23fd3c6f8b22c30")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoFood.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoFood.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

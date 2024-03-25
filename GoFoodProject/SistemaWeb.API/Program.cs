@@ -1,5 +1,5 @@
 using GoFood.GoogleAPI;
-using GoFood.Domain.API_s;
+using GoFood.Application.API_s;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,9 +29,8 @@ app.MapGet("api/Photo/{photoRef}", (string photoRef) =>
 {
     var key = GoogleAPI.GoogleApiKey;
     
-    var photo = $"{PhotosAPI.BaseUrl}maxwidth=400&minwidth=130&photoreference={photoRef}&key={key}";
+   return PhotosAPI.BuildUrl(photoRef, key);
 
-    return photo;
 });
 
 app.UseCors(c =>

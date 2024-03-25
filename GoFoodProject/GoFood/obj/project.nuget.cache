@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ej8X58QtaHEqbVOo+6K17OPgI4APG9uBFp8XQHFK3sa6BFbDHzz6J4VrLTRWSk6pYfupcUAwY4v0zLiWg9S3A==",
+  "dgSpecHash": "8HRmSxynKiX+DnFebz2awAbpkmf4sxs3OiGYIRmW8iQGxhP9RKUjBobqGirqxtU+rGxASGvYMqRmhgD4A75DPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood\\GoFood.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\GoFood.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.16\\microsoft.aspnetcore.authorization.7.0.16.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.16\\microsoft.aspnetcore.components.7.0.16.nupkg.sha512",
@@ -32,12 +32,15 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.16\\microsoft.jsinterop.webassembly.7.0.16.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.2\\microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.3\\microsoft.net.sdk.webassembly.pack.8.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mudblazor\\6.16.0\\mudblazor.6.16.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.16.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.17\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.17.nupkg.sha512"
   ],
   "logs": []
 }

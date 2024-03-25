@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj": {}
+    "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj": {
+    "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj",
         "projectName": "GoFood.Test",
-        "projectPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Test\\GoFood.Test.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\GoFoodProject\\GoFood.Test\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -77,12 +77,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
