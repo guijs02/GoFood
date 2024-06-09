@@ -9,8 +9,8 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GoFood.styles.css",
-      "PackagePath": "staticwebassets\\GoFood.styles.css"
+      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GoFood.App.styles.css",
+      "PackagePath": "staticwebassets\\GoFood.App.styles.css"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\app.css",
@@ -81,24 +81,20 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
-    },
-    {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GoFood.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GoFood.App.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GoFood.props",
-      "PackagePath": "build\\GoFood.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GoFood.App.props",
+      "PackagePath": "build\\GoFood.App.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GoFood.props",
-      "PackagePath": "buildMultiTargeting\\GoFood.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GoFood.App.props",
+      "PackagePath": "buildMultiTargeting\\GoFood.App.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GoFood.props",
-      "PackagePath": "buildTransitive\\GoFood.props"
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GoFood.App.props",
+      "PackagePath": "buildTransitive\\GoFood.App.props"
     }
   ],
   "ElementsToRemove": []

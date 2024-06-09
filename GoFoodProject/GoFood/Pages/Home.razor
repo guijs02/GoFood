@@ -1,40 +1,46 @@
 ﻿@page "/"
 
+@using GoFood.App.Components
 @using GoFood.Application.Dtos
 @using GoFood.Application.InputModels
 @using GoFood.Application.Services.Interfaces
 @using GoFood.Domain.Google.Places
 @using System.Diagnostics
 
-@inject ILocationService locationService
-@inject IPlacesService _placesService
-@inject NavigationManager navigation
+@inherits HomePage
 
-<div class="d-flex justify-content-center align-items-center" style="margin-top:5%;">
+<EditForm Model="@UserInputModel" OnValidSubmit="@GetPlacesAround">
+    <div class="d-flex justify-content-center align-items-center" style="margin-top:5%;">
+        <MudGrid Justify="Justify.Center" Style="margin-left: 15%;">
 
-    <MudGrid Justify="Justify.Center">
-        <MudButton Variant="Variant.Text" OnClick="OpenFiltro">
-            <MudImage Src="filtro.png" Height="20"></MudImage>
-        </MudButton>
-        <MudItem xs="4" sm="5">
+            <DataAnnotationsValidator />
+            <MudButton Variant="Variant.Text" OnClick="OpenFiltro">
+                <MudImage Src="filtro.png" Height="20"></MudImage>
+            </MudButton>
+            <MudItem xs="4" sm="5">
+                <MudAutocomplete @bind-Value="@UserInputModel.Endereco"
+                                 SearchFunc="@SearchAsync"
+                                 Immediate="true" CoerceValue="false"
+                                 ResetValueOnEmptyText="true"
+                                 AdornmentIcon="@Icons.Material.Filled.Search"
+                                 AdornmentColor="Color.Primary"
+                                 For="() => UserInputModel.Endereco" Class="flex-grow-0" />
 
-            <MudAutocomplete Label="" @bind-Value="@userInputModel.Endereco" Required="true"
-                             SearchFunc="@SearchAsync" Immediate="true" CoerceValue="false" ResetValueOnEmptyText="true"
-                             AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Primary" />
-        </MudItem>
-        <MudItem md="4" lg="3">
-            <MudButton OnClick="GetPlacesAround" Class="flex-grow-0" Style="background-color:#EF4040; color:#F5F5F5" Variant="Variant.Filled" Color="Color.Primary">Procurar</MudButton>
-        </MudItem>
-    </MudGrid>
-    <br />
-</div>
+            </MudItem>
+            <MudItem md="4" lg="3">
+                <MudButton ButtonType="ButtonType.Submit"  Style="background-color:#EF4040; color:#F5F5F5" Variant="Variant.Filled">Procurar</MudButton>
+            </MudItem>
+        </MudGrid>
+
+    </div>
+</EditForm>
 
 <Dialog Height="60"
         Width="88"
         IsVisibility="isVisibilityFiltro"
         VisibilityChanged="(visible) => isVisibilityFiltro = visible"
-        userInput="@userInputModel"
-        FiltroSavedChanged="(input) => userInputModel = input">
+        userInput="@UserInputModel"
+        FiltroSavedChanged="(input) => UserInputModel = input">
 </Dialog>
 
 <br />
@@ -70,7 +76,7 @@
                         </MudCardContent>
                         <MudCardActions>
                             <MudButton Variant="Variant.Text" Style="color:#EF4040;">Share</MudButton>
-                            <MudButton Variant="Variant.Text" Style="color:#EF4040;"> Learn More</MudButton>
+                            <MudButton Variant="Variant.Text" Style="color:#EF4040;">Learn More</MudButton>
                         </MudCardActions>
                     </MudCard>
                 </MudPaper>
@@ -78,12 +84,6 @@
         </MudGrid>
     </MudContainer>
 }
-
-@if (IsError)
-{
-    <MudAlert Severity="Severity.Error">@MessageError</MudAlert>
-}
-
 
 <style>
     .imagem {
@@ -96,71 +96,3 @@
     }
 </style>
 
-@code {
-    private List<ResultPlacesDto>? PlacesDto { get; set; }
-    private EditContext editContext1;
-    private bool MostrarEndereco;
-    private string ColorStatus;
-    private bool IsError;
-    private bool IsValid;
-    private string MessageError;
-    private bool isVisibilityFiltro;
-    const string UrlDefault = "https://sdumont.lncc.br/images/projects/no-image.png";
-    UserInputModel userInputModel = new();
-
-    protected override Task OnInitializedAsync()
-    {
-        editContext1 = new(userInputModel);
-        return base.OnInitializedAsync();
-    }
-    public void OpenFiltro()
-    {
-        isVisibilityFiltro = true;
-    }
-    public async Task OnKeyPressInput(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter")
-        {
-            await GetPlacesAround();
-        }
-    }
-    public async Task<IEnumerable<string>> SearchAsync(string input)
-    {
-        if (string.IsNullOrEmpty(input))
-            return new List<string>();
-
-        IEnumerable<string> listCity = await _placesService.GetPlacesByAutoComplete(input);
-
-        return listCity;
-    }
-
-    public async Task GetPlacesAround()
-    {
-        try
-        {
-            if (string.IsNullOrEmpty(userInputModel.Endereco))
-            {
-                return;
-            }
-            PlacesDto = await locationService.GetLocationAsync(userInputModel);
-        }
-        catch (Exception e)
-        {
-            IsError = true;
-            MessageError = e.Message;
-        }
-    }
-
-    public string ObterFoto(ResultPlacesDto resultPlaces)
-    {
-        if (resultPlaces.Photos is null)
-            return UrlDefault;
-
-        return resultPlaces.DictionaryFotos[resultPlaces.PhotoReference];
-    }
-
-    int ConvertRating(double rating)
-    {
-        return (int)rating;
-    }
-}

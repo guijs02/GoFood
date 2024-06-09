@@ -1,22 +1,30 @@
-﻿using GoFood.GoogleAPI;
-using Microsoft.AspNetCore.Mvc;
+﻿using GoFood.Api;
 using GoFood.Application.API_s;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace SistemaWeb.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class LocationController(HttpClient http) : Controller
+    public class LocationController : Controller
     {
-        private readonly HttpClient _http = http;
+        private readonly HttpClient _http;
+        private readonly IConfiguration _configuration;
+        private readonly string Key;
+        public LocationController(HttpClient http, IConfiguration configuration)
+        {
+            _http = http;
+            _configuration = configuration;
+            Key = GoogleAPI.GetApiKey(_configuration);
+        }
 
         [HttpGet("{endereco}")]
         public async Task<IActionResult> GetLocationAsync(string endereco)
         {
-            var key = GoogleAPI.GoogleApiKey;
+            var request = GeoCodeAPI.BuildUrlRequest(endereco, Key);
 
-            var response = await _http.GetAsync($"{GeoCodeAPI.BaseAdress}json?address={endereco.Trim()}&key={key}");
+            var response = await _http.GetAsync(request);
 
             var content = await response.Content.ReadAsStringAsync();
 

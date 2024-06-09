@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "GoFood.API/1.0.0": {
+      "GoFood.Api/1.0.0": {
         "dependencies": {
           "GoFood.Application": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "GoFood.API.dll": {}
+          "GoFood.Api.dll": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -78,7 +78,7 @@
     }
   },
   "libraries": {
-    "GoFood.API/1.0.0": {
+    "GoFood.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

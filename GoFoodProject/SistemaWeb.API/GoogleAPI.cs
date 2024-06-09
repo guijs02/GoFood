@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Primitives;
 
-namespace GoFood.GoogleAPI
+namespace GoFood.Api
 {
     public static class GoogleAPI
     {
@@ -9,13 +9,15 @@ namespace GoFood.GoogleAPI
         private const string API_KEY_NOT_FOUND = "A chave da API não foi encontrada!";
         public static string GoogleApiKey => _googleKey;
 
-        public static void GetApiKey(IConfiguration configuration)
+        public static string GetApiKey(IConfiguration configuration)
         {
             ArgumentNullException.ThrowIfNull(configuration);
 
             ArgumentNullException.ThrowIfNull(configuration[API_KEY], API_KEY_NOT_FOUND);
 
             _googleKey = configuration[API_KEY];
+
+            return _googleKey;
         }
     }
 }

@@ -35,19 +35,7 @@ namespace GoFood.Application.Services
 
                 var location = rootObject.results.First().geometry.location;
 
-                PlacesRequest placesRequest = new()
-                {
-                    lat = location.lat,
-                    lng = location.lng,
-                    radius = userInputModel.Radius.ToString(),
-                    filtroPlaces = new FiltroPlaces
-                    {
-                        isOpen = userInputModel.IsOpen,
-                        qtdRating = userInputModel.QtdAvaliacoes
-                    }
-                };
-
-                var dadosPlace = await _placesService.GetPlacesAroundAsync(placesRequest);
+                var dadosPlace = await _placesService.GetPlacesAroundAsync(userInputModel, location);
 
                 await GetPhotosAsync(dadosPlace);
 
@@ -62,7 +50,8 @@ namespace GoFood.Application.Services
 
         public async Task GetPhotosAsync(List<ResultPlacesDto> dadosPlace)
         {
-            var photoTasks = await Task.Factory.StartNew(
+            var photoTasks = await Task.Factory.StartNew
+            (
             async () =>
             await SendRequestPhotoAPI(dadosPlace)
             );

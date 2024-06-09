@@ -1,17 +1,24 @@
+using GoFood.Api;
 using GoFood.Application;
 using GoFood.Application.API_s;
 using GoFood.Domain.Google.Places.Request;
-using GoFood.GoogleAPI;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SistemaWeb.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PlacesController(HttpClient httpClient) : ControllerBase
+    public class PlacesController : ControllerBase
     {
-        private readonly HttpClient _httpClient = httpClient;
-        private string Key = GoogleAPI.GoogleApiKey;
+        private readonly HttpClient _httpClient;
+        private readonly IConfiguration _configuration;
+        private readonly string Key;
+        public PlacesController(HttpClient httpClient, IConfiguration configuration)
+        {
+            _httpClient = httpClient;
+            _configuration = configuration;
+            Key = GoogleAPI.GetApiKey(_configuration);
+        }
 
         [HttpPost]
         public async Task<IActionResult> GetNearbyPlaces(PlacesRequest placesRequest)
@@ -24,7 +31,7 @@ namespace SistemaWeb.API.Controllers
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    return StatusCode(500, response.StatusCode);
+                    return StatusCode(500, response.ReasonPhrase);
                 }
 
                 var content = await response.Content.ReadAsStringAsync();
