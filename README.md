@@ -30,8 +30,8 @@ Esta aplicação tem a finalidade do usuário localizar restaurantes a partir de
 ## 📖 Recursos e conceitos
 - Injeção de Dependência
 - Swagger
-- Clean Arquitecture
+- Clean Architecture
 - DTO
 - Principios de SOLID
-- API REST
+- API RestFul
 
