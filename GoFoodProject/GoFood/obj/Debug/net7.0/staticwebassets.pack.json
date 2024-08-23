@@ -1,99 +1,99 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\obj\\Debug\\net7.0\\compressed\\u743eqmbu0.gz",
-      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/obj/Debug/net7.0/compressed/uh7o8e515j.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GoFood.App.styles.css",
-      "PackagePath": "staticwebassets\\GoFood.App.styles.css"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/obj/Debug/net7.0/scopedcss/bundle/GoFood.App.styles.css",
+      "PackagePath": "staticwebassets/GoFood.App.styles.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\app.css",
-      "PackagePath": "staticwebassets\\css\\app.css"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "PackagePath": "staticwebassets\\css\\open-iconic"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
-      "PackagePath": "staticwebassets\\css\\open-iconic"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\README.md",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\filtro.png",
-      "PackagePath": "staticwebassets\\filtro.png"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/filtro.png",
+      "PackagePath": "staticwebassets/filtro.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\icon-192.png",
-      "PackagePath": "staticwebassets\\icon-192.png"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\image.png",
-      "PackagePath": "staticwebassets\\image.png"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/image.png",
+      "PackagePath": "staticwebassets/image.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
+      "Id": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GoFood.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.GoFood.App.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GoFood.App.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.GoFood.App.props",
       "PackagePath": "build\\GoFood.App.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GoFood.App.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.GoFood.App.props",
       "PackagePath": "buildMultiTargeting\\GoFood.App.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GoFood.App.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.GoFood.App.props",
       "PackagePath": "buildTransitive\\GoFood.App.props"
     }
   ],

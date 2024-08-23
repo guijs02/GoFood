@@ -6,16 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\net7.0\GoFood.Client.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net7.0\GoFood.Client.GlobalUsings.g.cs" />
-    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\net8.0\GoFood.Client.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net8.0\GoFood.Client.GlobalUsings.g.cs" />
-    <Compile Include="obj\Debug\net8.0\SistemaRecomendacaoRestuaruantes.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net8.0\SistemaRecomendacaoRestuaruantes.GlobalUsings.g.cs" />
-  </ItemGroup>
+
 
   <ItemGroup>
     <Content Include="obj\Debug\net8.0\blazor.boot.json" />

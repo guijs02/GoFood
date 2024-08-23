@@ -12,7 +12,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
     app.ConfigureSwagger();
 
-GoogleAPI.GetApiKey(builder.Configuration);
+GoogleAPI.GetApiKey();
 
 app.MapEndpoints();
 

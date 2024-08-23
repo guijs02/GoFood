@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build 
+
+WORKDIR /app
+COPY SistemaWeb.API ./SistemaWeb.API
+COPY . ./
+RUN dotnet restore ./SistemaWeb.API/
+RUN dotnet publish ./SistemaWeb.API/GoFood.API.csproj -c Release -o out
+# RUN apt-get update && install iputils-ping
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+WORKDIR /app
+COPY --from=build /app/out .
+
+ENTRYPOINT [ "dotnet", "GoFood.API.dll" ]
+

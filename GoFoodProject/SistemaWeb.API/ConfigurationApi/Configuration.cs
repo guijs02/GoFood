@@ -2,7 +2,7 @@
 {
     public static class Configuration
     {
-        public const string BackendUrl = "https://localhost:7164";
-        public const string FrontendUrl = "https://localhost:7144";
+        public const string BackendUrl = "http://gofood-api:9000";
+        public const string FrontendUrl = "http://gofood-web:3000";
     }
 }

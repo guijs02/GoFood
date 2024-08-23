@@ -1,0 +1,37 @@
+
+
+  services:
+    app:
+      build:
+        context: .
+        dockerfile: dockerfile.dev
+      image: guijs02/gofood-web
+      container_name: gofood-web
+      ports:
+      - 3000:80
+      networks:
+      - gonet
+
+    api:
+      build:
+        context: .
+        dockerfile: dockerfile.api
+      image: guijs02/gofood-api
+      container_name: gofood-api
+      environment:
+      - ApiKey=AIzaSyDcsebA5tahocCK-Bc284XpbRTCyWylA6o
+      ports:
+      - 9000:8080
+      networks:
+      - gonet
+
+
+  networks:
+     gonet:
+      driver: bridge
+      name: gonet
+
+
+
+
+    

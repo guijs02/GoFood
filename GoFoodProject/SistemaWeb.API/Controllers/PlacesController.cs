@@ -17,7 +17,7 @@ namespace SistemaWeb.API.Controllers
         {
             _httpClient = httpClient;
             _configuration = configuration;
-            Key = GoogleAPI.GetApiKey(_configuration);
+            Key = GoogleAPI.GetApiKey();
         }
 
         [HttpPost]

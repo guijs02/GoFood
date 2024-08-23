@@ -4,7 +4,7 @@ namespace GoFood.Application.Services
 {
     public class BaseService
     {
-        public const string BASE_URL = "https://localhost:7164";
+        public const string BASE_URL = "http://localhost:9000/";
         public HttpClient ConfigureHttpUrl() => new() { BaseAddress = new Uri(BASE_URL) };
        
     }

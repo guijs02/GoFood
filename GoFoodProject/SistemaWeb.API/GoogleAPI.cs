@@ -4,18 +4,18 @@ namespace GoFood.Api
 {
     public static class GoogleAPI
     {
-        private const string API_KEY = "API:Key";
+        private const string API_KEY = "ApiKey";
         private static string? _googleKey;
         private const string API_KEY_NOT_FOUND = "A chave da API não foi encontrada!";
         public static string GoogleApiKey => _googleKey;
 
-        public static string GetApiKey(IConfiguration configuration)
+        public static string GetApiKey()
         {
-            ArgumentNullException.ThrowIfNull(configuration);
+            var key = Environment.GetEnvironmentVariable(API_KEY);
+            
+            ArgumentNullException.ThrowIfNull(key, API_KEY_NOT_FOUND);
 
-            ArgumentNullException.ThrowIfNull(configuration[API_KEY], API_KEY_NOT_FOUND);
-
-            _googleKey = configuration[API_KEY];
+            _googleKey = key;
 
             return _googleKey;
         }

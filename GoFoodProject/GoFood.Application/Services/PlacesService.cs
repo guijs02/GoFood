@@ -66,6 +66,7 @@ namespace GoFood.Application.Services
             }
             catch (Exception e)
             {
+                Console.WriteLine("Erro: "+e.Message);
                 throw;
             }
         }

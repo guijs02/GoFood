@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\GoFood.Api.props" />
+  <Import Project="../build/GoFood.Api.props" />
 </Project>

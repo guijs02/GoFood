@@ -5,10 +5,13 @@
         public static void ConfigureCors(this WebApplication app)
         {
             app.UseCors(
-                c =>
-                c.WithOrigins([Configuration.FrontendUrl, Configuration.BackendUrl])
-                .AllowAnyHeader()
-                .AllowAnyMethod()
+                c => { 
+
+                // c.WithOrigins([Configuration.FrontendUrl, Configuration.BackendUrl])
+                c.AllowAnyOrigin();
+                c.AllowAnyMethod();
+                c.AllowAnyHeader();
+                }
             );
         }
         public static void ConfigureSwagger(this WebApplication app)

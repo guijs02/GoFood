@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uqgxb3IJU+g=",
+  "dgSpecHash": "HDav73V5gwnNUCDZvqFfINFNIA0/BfgFAI4U8WDnhSUMGhkw2wKuZVFmehjH+bPjhx5MQyaSBNE2UN2fagEk4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\GoFood\\GoFoodProject\\GoFood.Domain\\GoFood.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/mnt/c/Users/user/GoFood/GoFoodProject/GoFood.Domain/GoFood.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/gui/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/gui/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

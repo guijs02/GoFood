@@ -16,7 +16,7 @@ namespace SistemaWeb.API.Controllers
         {
             _http = http;
             _configuration = configuration;
-            Key = GoogleAPI.GetApiKey(_configuration);
+            Key = GoogleAPI.GetApiKey();
         }
 
         [HttpGet("{endereco}")]
